@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+
+  
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="index.html">HOME</a>
+    <a href="ser.html">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+    <button class="dropdown-btn">Dropdown 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="data.html">DATA STRUCTURE</a>
+        <a href="compiler.html">COMPILER DESIGNER</a>
+        <a href="dis.html">discreat MATHAMATICS</a>
+      </div>
+  </div>
+  
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ GATE READY TO CRACK</button>  
+    <h2>about</h2>
+    <pre>Using # define
+        # define x 10
+        # define pi 3.141
+        Where ‘# define’ is instruction to preprocessor so memory
+        is allocated. The preprocessor replace each occurrence of
+        name with value in program before execution.</pre>
+  </div>
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+
+  </script>
+
+</body>
+</html> 

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+
+  
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="index.html">HOME</a>
+    <a href="ser.html">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+    <button class="dropdown-btn">Dropdown 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="data.html">DATA STRUCTURE</a>
+        <a href="compiler.html">COMPILER DESIGNER</a>
+        <a href="dis.html">discreat MATHAMATICS</a>
+      </div>
+      <button class="dropdown-btn">Dropdown 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="data.html">DATA STRUCTURE</a>
+        <a href="compiler.html">COMPILER DESIGNER</a>
+        <a href="dis.html">discreat MATHAMATICS</a>
+      </div>
+    <a href="index.html">HOME</a>
+    <a href="ser.html">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+    <a href="index.html">HOME</a>
+    <a href="ser.html">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+    <a href="index.html">HOME</a>
+    <a href="ser.html">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+    <a href="index.html">HOME</a>
+    <a href="ser.html">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+    <a href="index.html">HOME</a>
+    <a href="ser.html">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+    <button class="dropdown-btn">Dropdown 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="data.html">DATA STRUCTURE</a>
+        <a href="compiler.html">COMPILER DESIGNER</a>
+        <a href="dis.html">discreat MATHAMATICS</a>
+      </div>
+  </div>
+  
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ GATE READY TO CRACK</button>  
+    <h2>ALGoRithm</h2>
+    <p>An algorithm is a fi nite set of instructions that, if followed, accomplishes
+        a particular task.<br>
+        All algorithms must satisfy the following.<br>
+         Input: Zero or more quantities are externally supplied.<br>
+        • Output: Atleast one quantity is produced.<br>
+        • Defi niteness: Each instruction should be clear and unambiguous.<br>
+        • Finiteness: The algorithm should terminate after fi nite number<br>
+        of steps.<br>
+        • Effectiveness: Every instruction must be very basic.<br><br>
+        Once an algorithm is devised, it is necessary to show that it
+        computes the correct answer for all possible inputs. This process
+        is called algorithm validation. Analysis of algorithms refers to the
+        task of determining how much computing time and storage an
+        algorithm requires.</p>
+
+        <h2>Analyzing Algorithms</h2>
+    <p>The process of comparing 2 algorithms rate of growth with respect
+        to time, space, number of registers, network, bandwidth etc is
+        called analysis of algorithms.<br>
+        This can be done in two ways<br>
+        1. Priori Analysis: This analysis is done before the execution;<br>
+        the main principle behind this is frequency count of
+        fundamental instruction.<br>
+        This analysis is independent of CPU, OS and system
+        architecture and it provides uniform estimated values..<br>
+
+        2. Posterior analysis: This analysis is done after the execution.
+It is dependent on system architecture, CPU, OS etc. it
+provides non-uniform exact values.
+    
+    </p>
+
+        <h2>Recursive Algorithms</h2>
+    <pre>A recursive function is a function that is defi ned in terms of itself.
+        An algorithm is said to be recursive if the same algorithm is
+        invoked in the body.</pre>
+
+        <h2>Towers of Hanoi</h2>
+    <pre>There was a diamond tower (labeled A) with 64-golden disks. The
+        disks were of decreasing size and were stacked on the tower in
+        decreasing order of size bottom to top. Besides this tower there
+        were 2 other diamond towers (labeled B and C) we have to move
+        the disks from tower A to tower B using tower C for intermediate
+        storage. As the disks are very heavy, they can be moved only one at
+        a time. No disk can be on top of a smaller disk .</pre>
+
+        <h2>about</h2>
+    <pre>Using # define
+        # define x 10
+        # define pi 3.141
+        Where ‘# define’ is instruction to preprocessor so memory
+        is allocated. The preprocessor replace each occurrence of
+        name with value in program before execution.</pre>
+
+        <h2>about</h2>
+    <pre>Using # define
+        # define x 10
+        # define pi 3.141
+        Where ‘# define’ is instruction to preprocessor so memory
+        is allocated. The preprocessor replace each occurrence of
+        name with value in program before execution.</pre>
+  </div>
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+
+  </script>
+
+</body>
+</html> 

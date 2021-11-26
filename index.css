@@ -1,5 +1,8 @@
 body {
     font-family: "Lato", sans-serif;
+    background-image: url("cool-background\ \(6\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   .sidebar {
@@ -13,6 +16,7 @@ body {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 90px;
+    box-shadow: 10px 20px 50px rgb(255, 255, 255);
   }
 
   h2{
@@ -27,6 +31,7 @@ body {
     color: #f1ecec;
     display: block;
     transition: 0.3s;
+    
   }
   
   .sidebar a:hover {
@@ -81,21 +86,28 @@ body {
 
   
   .openbtn {
-    font-size: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 20px 50px rgb(209, 203, 198);
+    width: 300px;
     cursor: pointer;
     background-color: #111;
     color: white;
     padding: 10px 15px;
     border: none;
+    margin-left: 80%;
+    position: fixed;
   }
   
   .openbtn:hover {
-    background-color: #444;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 10px 20px 50px rgb(255, 255, 255);
   }
   
   #main {
     transition: margin-left .5s;
     padding: 16px;
+    transition: 0.9s;
   }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
